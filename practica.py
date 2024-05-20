@@ -49,7 +49,7 @@ print(sub_fen) # muestrra el resultado de las letra que estan desde la posicion 
 # busqueda en una cadena
 fen="esto es una prueba de busqueda" # variable con mensaje inicial
 indice = fen.find("prueba")
-nuevo_fen= fen.replace("prueba" ,"PRUEBAa") # nueva variable con funcion de remplazar "prueba" por "PRUEBAa" o el mensaje de las segundas comillas
+nuevo_fen= fen.replace("prueba" ,"PRUEBAai") # nueva variable con funcion de remplazar "prueba" por "PRUEBAa" o el mensaje de las segundas comillas
 print(indice) #muestra la palabra que esta indicada dentro del find
 print(nuevo_fen) #muestra el mensaje inicial pero remplaza la palabra del indice por la de la nueva sub cadena en este caso "nuevo_fen" con la funcion de remplazar
 
