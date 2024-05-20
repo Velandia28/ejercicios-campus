@@ -53,3 +53,14 @@ nuevo_fen= fen.replace("prueba" ,"PRUEBAai") # nueva variable con funcion de rem
 print(indice) #muestra la palabra que esta indicada dentro del find
 print(nuevo_fen) #muestra el mensaje inicial pero remplaza la palabra del indice por la de la nueva sub cadena en este caso "nuevo_fen" con la funcion de remplazar
 
+# conversion de texto mayus a minus
+cad="hola mundo " #mensaje a modificar
+mayus=cad.upper() # mensaje convertido a mayusculas
+minus=cad.lower() #mensaje convertido a minusculas
+primer_mayus=cad.capitalize() #mensaje con la primer letra en mayuscula
+titulada=cad.title() # mensaje con las primeras letra de cada palabra en mayuscula
+print(cad) #imprime el mensaje de la variable sin modificar
+print(mayus) # imprime el mensaje convertido a mayusculas
+print(minus)# imprime el mensaje convertido en minusculas
+print(primer_mayus)#imprime el mensaje con la primer letra del mensaje en mayuscula
+print(titulada) #imprime el mensaje con la primer letra de cada palabra en mayuscula
