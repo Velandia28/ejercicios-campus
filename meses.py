@@ -1,4 +1,4 @@
-meses  =int( input("por favor digiete el numero de su mes" ))
+meses  =int( input("por favor digiete el numero de su mes  " ))
 
 if meses ==1:
     print =("mes digitado es enero")
