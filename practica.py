@@ -38,7 +38,7 @@ print(longitud) #muestra el numero de caracteres del mensaje de la primer variab
 
 #acceso a caracteres individuales
 fen="Soatá" # se le asigna un mensaje 
-primer_caracter=fen[0]  #toma la posicion que determine el usuario 
+primer_caracter=fen[4]  #toma la posicion que determine el usuario partiendo desde 0 
 print (primer_caracter) #muestra la letra el mensaje deacuerdo a la posicion que determina el usuario 
 
 #subcadena de una cadena
