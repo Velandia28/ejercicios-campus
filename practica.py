@@ -64,3 +64,10 @@ print(mayus) # imprime el mensaje convertido a mayusculas
 print(minus)# imprime el mensaje convertido en minusculas
 print(primer_mayus)#imprime el mensaje con la primer letra del mensaje en mayuscula
 print(titulada) #imprime el mensaje con la primer letra de cada palabra en mayuscula
+
+#Separacion de cadenas
+cadena="hola, como, estas" #mesaje a imprimir
+sub_cadena=cadena.split(",")# funcion que separa las palabras del mensaje por ","
+nueva_cad="-".join(sub_cadena)# funcion que separa las palabras por "-"
+print(sub_cadena) #imprime el mensaje con la nueva separacion por ","
+print(nueva_cad)#imprime el mensaje con la nueva separacion por "-"
