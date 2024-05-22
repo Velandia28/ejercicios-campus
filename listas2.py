@@ -8,9 +8,11 @@ materia=[]
 
 nombre=(input("escriba su nombre :  "))
 while True:
-    input("para finalizar deje vacio el campo siguiente ")    
+    print("para finalizar escriba 0 en el siguiente campo ")    
     msn=input("que asignaturas ve en el curso :")
-    if msn=="":
+    #materia.append(msn)
+    #print ("yo  estudio ",materia)
+    if msn=="0":
          print("el ejercio ha finalizado ")
          break
     materia.append(msn)
