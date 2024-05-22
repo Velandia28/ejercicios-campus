@@ -2,10 +2,7 @@
 # (por ejemplo Matemáticas, Física, Química, Historia y Lengua) en una lista 
 # y la muestre por pantalla el mensaje Yo estudio <asignatura>, donde <asignatura> 
 # es cada una de las asignaturas de la lista.
-
-
 materia=[]
-
 nombre=(input("escriba su nombre :  "))
 while True:
     print("para finalizar escriba 0 en el siguiente campo ")    
@@ -17,5 +14,3 @@ while True:
          break
     materia.append(msn)
 print ("yo  estudio ",materia)
-
-    
