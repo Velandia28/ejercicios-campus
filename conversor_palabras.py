@@ -20,4 +20,10 @@ print (innver_frase)
 sub_frase=frase.split(",")
 print(sub_frase)
 
+div_2=len(frase) 
+print(div_2)
+
+
+
+
         
