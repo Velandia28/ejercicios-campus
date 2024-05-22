@@ -20,10 +20,9 @@ print (innver_frase)
 sub_frase=frase.split(",")
 print(sub_frase)
 
-div_2=len(frase) 
-print(div_2)
 
+segunda_mitad=frase[len(frase)//2:] # subcadena que muestra la segundfa mitad de la frase ingresada
 
-
+print(segunda_mitad)
 
         
