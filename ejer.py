@@ -1,0 +1,8 @@
+a = int(5)
+b = int((3))
+suma = (a+b)
+res= (a-b)
+div= (a*b)
+print (suma)
+print(res)
+print(div)
