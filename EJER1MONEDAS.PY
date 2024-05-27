@@ -15,4 +15,3 @@ for valor in dinero :
         break
     elif divisa != dinero:
         print ("divisa no encontrada")  
-        break
