@@ -17,7 +17,9 @@
  
 # -La estructura a utilizar es libre, solo se pide que sea ordenada y coherente. 
 # -Todo debe ser dentro de un menú que se repite para no perder la información y al presionar la opción de salida se debe pedir confirmación de la misma.
-
+from participantes.modulo_registrar import *
+from participantes.modulo_pagar import *
+from participantes.modulo_eliminar import *
 eventos = {
     "participantes": {
         "121312313": {"nombre": "Juan", "Edad": 50, "Cargo": "Contador", "Pago": False},
@@ -31,41 +33,41 @@ eventos = {
     ]
 }
 
-def registrar_participante(data):
-    print("**************************************************")
-    participante = {}
-    doc = input("Ingrese el documento: ")    
-    if data["participantes"].get(doc, None) == None:
-        participante["Nombre"] = input("Ingrese el nombre: ")
-        participante["Edad"] = int(input("Ingrese la edad: "))
-        participante["Cargo"] = input("Ingrese el cargo: ")
-        participante["Pago"] = False
-        data[doc] = participante
-    else:
-        print("Participante ya existe!")
-    print("**************************************************")
+# def registrar_participante(data):
+#    print("**************************************************")
+#    participante = {}
+#    doc = input("Ingrese el documento: ")    
+#    if data["participantes"].get(doc, None) == None:
+#        participante["Nombre"] = input("Ingrese el nombre: ")
+#        participante["Edad"] = int(input("Ingrese la edad: "))
+#        participante["Cargo"] = input("Ingrese el cargo: ")
+#        participante["Pago"] = False
+#        data[doc] = participante
+#    else:
+#        print("Participante ya existe!")
+#    print("**************************************************")
 
-def pagar_participante(data):
-    print("**************************************************")
-    doc = input("Ingrese el documento: ")
-    participante = data["participantes"].get(doc, None)
-    if participante != None and participante["Pago"] == False:
-        data["participantes"][doc]["Pago"] = True
-        print("Pago existoso!")
-    else:
-        print("Participante no existe o ya pagó!")
-    print("**************************************************")
+#def pagar_participante(data):
+#    print("**************************************************")
+#    doc = input("Ingrese el documento: ")
+#    participante = data["participantes"].get(doc, None)
+#    if participante != None and participante["Pago"] == False:
+#        data["participantes"][doc]["Pago"] = True
+#        print("Pago existoso!")
+#    else:
+#        print("Participante no existe o ya pagó!")
+#    print("**************************************************")
 
-def eliminar_participante(data):
-    print("**************************************************")
-    doc = input("Ingrese el documento: ")
-    participante = data["participantes"].get(doc, None)
-    if participante != None and participante["Pago"] == False:
-        data["participantes"].pop(doc)
-        print("Eliminación existosa!")
-    else:
-        print("Participante no existe o ya perdió!")
-    print("**************************************************")
+#def eliminar_participante(data):
+#    print("**************************************************")
+#    doc = input("Ingrese el documento: ")
+#    participante = data["participantes"].get(doc, None)
+#    if participante != None and participante["Pago"] == False:
+#        data["participantes"].pop(doc)
+#        print("Eliminación existosa!")
+#    else:
+#        print("Participante no existe o ya perdió!")
+#    print("**************************************************")
 
 def registrar_evento(data):
     print("**************************************************")
@@ -78,16 +80,16 @@ def registrar_evento(data):
     print("Evento registrado")
     print("**************************************************")
 
-def modificar_evento(data):
-    print("**************************************************")
-    conta = 1
-    print("Ingrese el numero del evento a eliminar ->")
-    for i in data["eventos"]:
-        print(conta,"-", i["Nombre"], "que será el dia", i["Dia"])
-        conta += 1
-    opc = int(input("Ingrese su elección: "))
-    evento = data["eventos"][opc-1] #Falta validar que el indice sea válido
-    evento =[eventos]["Nombre"],valor[""]
+#def modificar_evento(data):
+#    print("**************************************************")
+#    conta = 1
+#    print("Ingrese el numero del evento a eliminar ->")
+#    for i in data["eventos"]:
+#        print(conta,"-", i["Nombre"], "que será el dia", i["Dia"])
+#        conta += 1
+#    opc = int(input("Ingrese su elección: "))
+#    evento = data["eventos"][opc-1] #Falta validar que el indice sea válido
+#    evento =[eventos]["Nombre"],valor[""]
 
 
 
@@ -171,7 +173,7 @@ while True:
         registrar_evento(eventos)
     elif opc == 5:
         print("Modificar evento") 
-        modificar_evento(eventos)#Pendiente
+        
     elif opc == 6:
         eliminar_evento(eventos)
     elif opc == 7:
@@ -183,4 +185,4 @@ while True:
     elif opc == 10:
         mostrar_eventos(eventos)
     elif opc == 0:
-        print(eventos["eventos"])
+        print(eventos["participantes"])

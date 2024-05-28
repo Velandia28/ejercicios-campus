@@ -6,5 +6,5 @@ def eliminar_participante(data):
         data["participantes"].pop(doc)
         print("Eliminación existosa!")
     else:
-        print("Participante no existe o ya perdió!")
+        print("Participante no existe o ya pago!")
     print("**************************************************")

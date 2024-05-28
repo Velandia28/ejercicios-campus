@@ -7,7 +7,7 @@ def registrar_participante(data):
         participante["Edad"] = int(input("Ingrese la edad: "))
         participante["Cargo"] = input("Ingrese el cargo: ")
         participante["Pago"] = False
-        data[doc] = participante
+        data["participantes"][doc] = participante
     else:
         print("Participante ya existe!")
     print("**************************************************")
