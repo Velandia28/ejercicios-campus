@@ -40,6 +40,7 @@ while True:
          print(datos["inscritos"])
     elif opc == 1:
         registrar_inscripcion(datos)
+    elif opc 
 
 
 
