@@ -1,12 +1,47 @@
-datos={
-    "inscritos"{
-    "131312": {"nombre":"luis", "edad": 21, "departamento": "santander"},
-    "12383":{"nombre":"laura", "edad": 23, "departamento": "santander"},
-    "452211": {"nombre":"jorge", "edad": 30, "departamento": "santander"}
+datos= {
+    "inscritos":{
+    "131312": {"nombre":"luis", "edad": 21, "carrera": "ciclismo"},
+    "12383":{"nombre":"laura", "edad": 23, "carrera": "patinaje "},
+    "452211": {"nombre":"jorge", "edad": 30, "carrera": "atletismo"}
     },
-    "carrera"{
-        "atletimo":{"131312": {"nombre":"luis", "edad": 21, "departamento": "santander"}},
-        "ciclimo":{"12383":{"nombre":"laura", "edad": 23, "departamento": "santander"}},
-        "patinaje":{"452211": {"nombre":"jorge", "edad": 30, "departamento": "santander"}}
-        }
     }
+
+def registrar_inscripcion(data):
+        if data["inscritos"].get(años, None)== None:
+            if años >= 18 and depar == ("santander"):
+                print("**********************")
+                inscrito={}
+                doc=input("ingrese su documento: ")    
+                inscrito["nombre"]=input("ingrese su nombre:  ")
+                inscrito["carrera"]=input("a que carrera va a ingresar -atletismo -ciclismo -patinaje : ")
+                inscrito["edad"]=input("verifique su edad: ")
+                data["inscritos"][doc]=inscrito
+            else:
+                años<18 and depar!=("santander")
+                print("no puede inscribirse a ninguna carrera debido a su edad !!")
+
+while True: 
+    años=int(input("Cuantos años tiene :  "))
+    depar=input("Cual es su departamento de origen:  ")
+    break
+#cerrar 
+
+opc_menu = ("1.Para registrar participante","2.salir ")
+while True:   
+    print("*********************************************************")
+    print("Seleccione ->")
+    for i in opc_menu:
+        print(i)
+    opc = int(input("Ingrese la opción deseada: "))
+   
+    if opc ==len(opc_menu):
+        print("Saliendo...")
+        break
+    elif opc== 0:
+         print(datos["inscritos"])
+    elif opc == 1:
+        registrar_inscripcion(datos)
+
+
+
+    
