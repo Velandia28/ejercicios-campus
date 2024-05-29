@@ -18,16 +18,19 @@ def registrar_inscripcion(data):
                 data["inscritos"][doc]=inscrito
             else:
                 años<18 and depar!=("santander")
-                print("no puede inscribirse a ninguna carrera debido a su edad !!")
+                print("**************************")
+                print("no puede inscribirse a ninguna carrera debido a su edad  o departamento de origen !!")
+               
+
 
 while True: 
     años=int(input("Cuantos años tiene :  "))
     depar=input("Cual es su departamento de origen:  ")
-    break
-#cerrar 
+    
 
-opc_menu = ("1.Para registrar participante","2.salir ")
-while True:   
+
+    opc_menu = ("1.Para registrar participante","2.salir ")
+  
     print("*********************************************************")
     print("Seleccione ->")
     for i in opc_menu:
