@@ -13,15 +13,18 @@ def registrar_inscripcion(data):
                 inscrito={}
                 doc=input("ingrese su documento: ")    
                 inscrito["nombre"]=input("ingrese su nombre:  ")
-                inscrito["carrera"]=input("a que carrera va a ingresar -atletismo -ciclismo -patinaje : ")
                 inscrito["edad"]=input("verifique su edad: ")
+                inscrito["carrera"]=input("a que carrera va a ingresar -atletismo -ciclismo -patinaje : ")
+                print("*************************************")
                 data["inscritos"][doc]=inscrito
             else:
                 años<18 and depar!=("santander")
                 print("**************************")
                 print("no puede inscribirse a ninguna carrera debido a su edad  o departamento de origen !!")
+                print("*****************************")
                
 while True: 
+    
     años=int(input("Cuantos años tiene :  "))
     depar=input("Cual es su departamento de origen:  ")
     
@@ -40,7 +43,7 @@ while True:
          print(datos["inscritos"])
     elif opc == 1:
         registrar_inscripcion(datos)
-    elif opc 
+    #
 
 
 
