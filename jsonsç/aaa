@@ -1,0 +1,12 @@
+import json
+
+def cargar_datos(ruta):
+    with open(ruta) as contenido:
+        ejercicio = json.load(contenido)
+        for ejer in ejercicio:
+            print(ejer.get("futbol",""))
+            
+if __name__ =="__main__":
+    ruta = "ejercicio.json"
+    cargar_datos(ruta)
+    
